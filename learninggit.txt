@@ -1,0 +1,46 @@
+git init 初始化
+git add <file> 添加文件
+git commit -m <message> 提交更改，附上信息
+git status 查看工作区状态
+git diff 查看更改
+git log 查看版本历史
+git reflog 查看命令历史
+git reset --hard <HEAD^><HEAD~100><1094a.....> 恢复到某个版本
+git checkout -- readme.txt  丢弃工作区修改恢复文件到版本库/暂存状态
+git reset HEAD <file> 恢复文件到版本库状态
+git rm <file> 删除文件并暂存
+
+cttesst
+
+远程相关
+git remote add origin git@github.com:用户名/learngit.git  关联远程库
+git push (-u) origin master 推送到远程库 -u表示关联分支用于第一次推送
+git clone git@github.com:用户名/learngit.git 克隆远程库
+
+分支相关
+git branch 查看分支
+git branch <name> 创建分支
+git branch -d <name> 删除分支
+git switch (-c) <name> (创建并)切换分支
+git merge <name> 合并某分支到当前分支
+git merge --no-ff -m "merge with no-ff" <name>
+git log --graph 查看分支合并图
+
+git tag 查看所有标签
+git tag <name> 添加标签名
+
+git pull 抓取远程分支
+git push origin <branch-name> 推送分支
+git branch --set-upstream-to <branch-name> origin/<branch-name>  将本地分支和远程分支链接
+git remote -v 查看远程库信息
+git switch -c branch-name origin/branch-name  ?? 创建本地分支并和和远程分支链接
+
+git stash 保存工作现场
+git stash pop 回到工作现场  git stash apply 恢复工作现场 git stash drop 删除保存的工作现场
+cherry-pick 复制一个特定的提交到当前分支
+
+<<<<<<< HEAD
++++ed test
+=======
++++ test
+>>>>>>> 814abc058321f9fc2ef1f0ccbd69e59a14326a1e
