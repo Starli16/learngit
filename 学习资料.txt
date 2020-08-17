@@ -5,6 +5,7 @@ https://github.com/ApolloAuto/apollo
 https://github.com/daohu527/Dig-into-Apollo/tree/master/cyber/source
 https://github.com/mickeyouyou/apollo_lite
 https://github.com/daohu527/Dig-into-Apollo
+https://github.com/HotzoneAuto/guide-auto
 
 docker
 https://www.runoob.com/docker/docker-tutorial.html
